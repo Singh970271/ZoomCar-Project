@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/8f25f20933.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./components/navbar.css">
+    <style>
+        *,::after, ::before{
+            box-sizing: inherit;
+
+        }
+        .topimage{
+            background-image: url("https://www.zoomcar.com/img/bg-desktop.png");
+            background-size: cover;
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            position: relative;
+            /* opacity:1; */
+            /* height: 500px; */
+        }
+        .promo{
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            padding-top:32px;
+            padding-bottom: 16px;
+            max-width: 1016px;
+           
+        }
+        .card{
+            display:block;
+            /* width:100px; */
+            flex:40%;
+            margin: 16px;
+        }
+        .card a{
+            display:block;
+            text-decoration: none;
+        }
+        .card>a>img{
+            width:100%;
+        }
+        .card_01{
+            background-color: #f5f5f5;
+            padding:32px 16px;
+        }
+        .responsive{
+            display:flex;
+            flex-direction: row;
+            padding: 112px 16px;
+            max-width: 1016px;
+            margin: 0 auto;
+        }
+        .unit{
+            display: flex;
+            justify-content: center;
+            border-radius: 4px;
+            border: 1px solid #d8d8d8;
+            background-color: white;
+            flex: 1;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+        }
+        .article{
+            display: flex;
+            font-size: 16px;
+            color:rgba(0,0,0,0.78);
+            padding:16px;
+        }
+        .article>img{
+            max-width: 125px;
+            max-height: 125px;
+            margin-right: 16px;
+            border: none;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .homeoffers{
+            display: flex;
+            flex-direction: column;
+            max-width: 1016px;
+            margin: 0 auto;
+            padding: 40px 0;
+
+        }
+        .homeoffers>h3{
+            margin: 0 16px;
+            font-size: 15px;
+        }
+        .cours{
+            margin: 8px 16px;
+        }
+        .wrapper{
+            display: flex;
+            overflow: scroll;
+            white-space: nowrap;
+        }
+        .wrapper>a{
+            margin-right: 16px;
+            height: 180px;
+            width:300px;
+            text-decoration: none;
+        }
+        .wrapper>a>img{
+            /* width: 100%; */
+            height: 100%;
+        }
+        
+        .footer{
+            font-size: 14px;
+            color:#666;
+            background: #f5f5f5;
+        }
+        .footer>a{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            padding: 14px;
+            font-weight: 500;
+            background-color: #ffffff;
+            border-top: solid 1px rgba(0,0,0,0.1);
+            color: #000000;
+            opacity: 1;
+            text-decoration: none;
+        }
+        .footer_elements{
+            padding: 16px;
+            border-top: 1px solid rgba(0,0,0,0.12);
+            color:#1f1f1f;
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 1016px;
+            margin: 0 auto;
+            
+        }
+        
+        .unclipped h3{
+            font-size: 14px;
+            margin: 32px 0 8px;
+        }
+        .copyright{
+            text-align: center;
+            padding: 16px;
+        }
+        .search{
+            max-width: 440px;
+            margin: 0 auto;
+            
+            padding: 16px;
+            font-size: 16px;
+            padding-top:350px;
+        }
+        .ride-section{
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 0;
+        }
+        .box-border{
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        .field-wrap{
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        .field-wrap>a{
+            display: block;
+        }
+        .field-address{
+            font-size: 16px;
+            margin: 0 8px;
+            display: flex;
+            align-items: center;
+            color: #1f1f1f;
+        }
+        .green-icon{
+            min-width: 8px;
+            min-height: 8px;
+            border-radius: 50%;
+            background-color: #10a310;
+            box-shadow: 0 0 8px 8px #e6ffea;
+            margin-left: 8px;
+            margin-right: 16px;
+        }
+        .placeholder{
+            color:#a8a8a8;
+            flex: 1;
+            padding: 16px 0;
+        }
+        .button-wrapper>button{
+            background-color: #e0e0e0;
+            color: #a8a8a8;
+            border-color: #e0e0e0;
+            box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            max-width: 440px;
+            margin: 0 auto 16px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #city-lightbox{
+            display: flex;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="city-lightbox">
+            
+        </div>
+        <header id="header">
+            
+        </header>
+        <div class="homepage">
+            <div class="pagecontainer">
+                <div class="topimage">
+                    <section class="search">
+                        <!-- Make a onclick function of ride trip -->
+                        <form action="">
+                            <div class="ride-section">
+                                <span>Round Trip</span>
+                            </div>
+                            <div class="box-border">
+                                <div class="field-wrap">
+                                    <a href="">
+                                        <div class="field-address">
+                                            <div class="green-icon"></div>
+                                            <div class="placeholder">Pick Up City, Airport, Adress or Hotel</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button-wrapper">
+                                <button disabled="disabled">Find Cars</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="promocontainer">
+                    <div class="promo">
+                        <div class="card">
+                            <a>
+                               <img src="https://www.zoomcar.com/build/2bd9b312f575510da149ed2a8b862852.jpeg" alt="First time user offer"> 
+
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.zoomcar.com/in/hyderabad?q=address&loc=normal">
+                                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/2c4154fb9da48257e27730f6869d69ddda541410.jpeg?1644819459" alt="">
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.zoomcar.com/zap/subscribe/amigo?auth_required=true">
+                                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/378f52cd9ee91c071304836fb21b9be5fd09c69e.jpeg?1642478236" alt="Pune Hyd Chn Mum Del Blr Kol ">
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.zoomcar.com/in/hyderabad?q=address&loc=normal">
+                                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/f78731484afd06bb92b74feb680b8c208836ec5d.jpeg?1644411126" alt="">
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.zoomcar.com/supermiler-elite?auth_required=true">
+                                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/02dd1b11f8883a54f4591e945bf6597b2832edbb.png?1633777179" alt="Supermiler Elite">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card_01">
+                        <div class="responsive">
+                            <div class="unit">
+                                <div class="article">
+                                    <img src="https://zoomcar-assets.zoomcar.com/images/original/85fef585709cb289fd06adeabd230c5383200f20.png?1545144526" alt="Offer image">
+                                    <article>
+                                        <h3>REFER AND EARN</h3>
+                                        <p>You earn 500 credits, your friend gets 30% (upto Rs. 2500) off on their first booking of at least 8 hours.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="homeoffers">
+                    <h3>OFFERS</h3>
+                    <div class="cours">
+                        <div class="wrapper">
+                            <a href="">
+                                <img src="https://zoomcar-assets.zoomcar.com/photos/original/dffb93ebfa97040a71e476405c0c146c5718da4d.jpg?1644857465" alt="">
+
+                            </a>
+                            <a href="">
+                                <img src="https://zoomcar-assets.zoomcar.com/photos/original/3739f2eb9738437f093a2e4a3488cff77074bc29.jpg?1640267714" alt="">
+                            </a>
+                            <a href="">
+                                <img src="https://zoomcar-assets.zoomcar.com/photos/original/9cff4212398acb2526abe98528ae1e703c169895.jpg?1636736308" alt="">
+
+                            </a>
+                            <a href="">
+                                <img src="https://zoomcar-assets.zoomcar.com/photos/original/3ab96dc6fe7215bb7522798937cc9ba354186551.jpg?1543320021" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="">About Us</a>
+                <div class="footer_elements">
+                    <div class="unclipped">
+                        <h3>SELF DRIVE CARS IN HYDERABAD</h3>
+                       <p> One-half of a twin city, Hyderabad is a city of opposites. While one-half is steeped in history and thronged with people, the other is sleek and filled with malls, offices and restaurants. What makes Hyderabad truly special is the mix of people that live in this dynamic city. With the economy booming, the number of young people has gone up over the past few years leading to the birth of a lifestyle that focuses on leisure just as much as work. Short holidays and road trips have become the norm, and with driving being viewed as an expression of freedom, the need for car rental services in Hyderabad has risen.</p>
+                        <br>
+                        <h3>CAR RENTAL IN HYDERABAD</h3> 
+                        <p>With business being on one side of the city and affordable residences on the other, commuting is a part of daily life. If you’re someone that does not want the hassle of dealing with driver schedules from traditional car rental services in Hyderabad, you can choose a self-drive car from Zoomcar to ensure you have full control over your schedule at all times. With cab fares being astronomically high, you can get a car for rent in Hyderabad just when you get out of the airport. </p>
+                            
+                            <p>Hyderabad airport taxi service from Zoomcar is readily available when you arrive at Rajiv Gandhi International Airport. Head to the parking lot where you can opt for any one of the self-driven cars for rent in Hyderabad. If you're looking for a quick weekend getaway from Hyderabad to Srisailam, you can get a vehicle that comes with 24x7 roadside assistance so you can have a hassle-free journey.</p>
+
+                        
+                        
+                        <h3>RENT A CAR IN HYDERABAD</h3>
+                        <p>Getting self-driven cars for rent in Hyderabad has never been simpler, and you can begin by picking from the wide range of self-drive cars on the Zoomcar website or app. Each of these cars comes with vehicle insurance and all India permits and is a safe bet for young women who love driving. Maybe this weekend, you can get a car on rent in Hyderabad plan that much needed getaway from Hyderabad to Vijayawada.</p>
+                           
+                            <h3>ABOUT ZOOMCAR</h3>
+                            <p>No more worries about petrol mileage, insurance, and car breakdowns! Zoomcar has enabled driving convenience for travellers around the country and is fast expanding its reach to cities including Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur, Kochi, Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and Vizag. 
+                                Self-drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self-drive car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © Copyright 2021 Zoomcar India Private Ltd. All rights reserved 
+            </div>
+
+
+
+        </div>
+        <div id="sidemenuouter" >
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script type="module">
+import {navbar,sidebarf,citybarf} from "./components/navbar.js"
+    let header=document.getElementById("header");
+    header.innerHTML=navbar();
+    let sidebar=document.querySelector("#sidemenuouter");
+    sidebar.innerHTML=sidebarf();
+    let citybar=document.getElementById("city-lightbox");
+    citybar.innerHTML=citybarf();
+
+
+
+     document.querySelector("#confirm").addEventListener("click",confirm);
+    function confirm(){
+        let city=document.getElementById("city").value;
+        // console.log(city);
+        localStorage.setItem("city",JSON.stringify(city));
+        document.querySelector("#city-lightbox").style.display="none";
+    }
+    // let city=document.getElementById("city").value;
+    document.querySelector("#pointer").addEventListener("click",opensideber);
+    sidebar.addEventListener("click",closeside);
+    function closeside(){
+        sidebar.style.display="none";
+    }
+    function opensideber(){
+        sidebar.style.display="flex";
+    }
+
+
+    // function displaycity(){
+    //     document.querySelector("#city-lightbox").style.display="flex";
+    // }
+
+     
+    
+
+
+
+
+
+</script>
+
+<!-- onclick="confirm()" onclick="closeside()" -->
+
+
+
+
+
