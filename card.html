@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+    <link rel="stylesheet" href="./paymentPage.css">
+
+<style>
+.card_payment{
+    width:28%;
+    height:270px;
+    background-color:whitesmoke;
+    margin:7% auto;
+    padding:2%;
+}
+#pay-btn{
+    margin-top:4%;
+}
+input{
+    padding:5px;
+}
+.cardNumber input {
+    padding-left: 1%;
+    width:80%;
+    margin:2%;
+    
+}
+.cardInfo input {
+    width:25%;
+    margin:2%;
+}
+.cardInfo cvV {
+    width:40%;
+}
+
+</style>
+</head>
+<body>
+    <div class="card_payment">
+        <h4>Enter the card Details</h4>
+        <div class="card">
+           
+        <div class="cardNumber"><input type="text" maxlength="16"
+            placeholder="ENTER CARD NUMBER" appearance="textfield"  id="cardNum"
+            oninput="changeonfilling()"/>
+        </div>
+        <div class="cardInfo"><input maxlength="2" placeholder="MM" type="text" id="mm"
+            oninput="changeonfilling()"/>
+            <input placeholder="YYYY" maxlength="4" type="text" class="year" id="expyear"
+            oninput="changeonfilling()"/>
+         </div>
+         <div class="cardInfo"> <input maxlength="3" placeholder="CVV" type="password"
+            class="cvv" id="CVV" oninput="changeonfilling()"/>
+        </div>
+    
+        </div>
+        <button class="paymentButton" id="pay-btn" onclick="dopayment(event)">
+            <div id="paybbtn">
+                <p>Pay</p>
+                 <p id="paybtn2"></p>
+             </div>
+        </button>
+    </div>
+</body>
+</html>
+
+<script>
+function dopayment(e) 
+{
+  let cardnum = document.getElementById("cardNum").value;
+  let expyear= document.getElementById("expyear").value;
+  let CVV= document.getElementById("CVV").value;
+  let mm = document.getElementById("mm").value;
+  if (cardnum== "" || expyear == "" || CVV== "" || mm == "" || cardnum.length != 16 || expyear.length != 4 || mm.length != 2 || CVV.length != 3) 
+    {
+     alert("fill all the  Input  fields");
+     e.prevent();
+    } 
+  else 
+  {
+    window.location.href = "BookingConfirmation.html";
+  }
+}
+function changeonfilling()
+{
+  let cardnum = document.getElementById("cardNum").value;
+  let expyear = document.getElementById("expyear").value;
+  let CVV= document.getElementById("CVV").value;
+  let mm = document.getElementById("mm").value;
+  if (cardnum.length == 16 && expyear.length == 4 && mm.length == 2 && CVV.length == 3) 
+  {
+    let paybtn= document.getElementById("pay-btn");
+    paybtn.style.backgroundColor = "#70ad4d";
+    paybtn.style.color = "black";
+  }
+}
+</script>
