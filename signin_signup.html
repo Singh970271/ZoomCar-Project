@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <div>
+            <img id="image" src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg" alt="image">
+        </div>
+        <div id="login-container">
+            <input type="checkbox" id="click">
+            <div id="text">Enter details to login/sign-up</div>
+            <label for="click">
+                <div id="mobile-option">
+                    <div class="country-selector">
+                        <div class="country-flag">
+                            <img id="country-flag1" src="https://zoomcar-assets.zoomcar.com/images/original/6f17ebdd21613e4fb147c47d136ed7b722d15152.png?1633930605"
+                                alt="flag image">
+                            <span id="country-code">+91</span>   
+                        </div>
+                        <span id="down-arrow">&blacktriangledown;</span>
+                    </div>
+                    <span id="mobile-text">Enter Mobile Number</span>
+                </div>
+           </label>
+            <hr>
+            <div id="email-option">Continue with Email ID</div>
+            <hr>
+            <div class="social-option">
+                <p id="title">Continue via Social</p>
+                <img src="https://www.zoomcar.com/build/62ba375ec1a9fbcbee9e9099181c8d38.svg" alt="facebook">
+                <img src="https://www.zoomcar.com/build/279de03b0c8ecdb4db56a79da6e775e6.svg" alt="google">
+            </div>
+            <div class="popUp-container">
+                <label for="click" class="fas fa-arrow-left"></label>
+                <p>Enter Mobile Number</p>
+                <div class="popUp-content">
+                    <div class="input-container">
+                        <div id="country-selector1">
+                            <div class="country-flag">
+                                <img id="country-flag2" src="https://zoomcar-assets.zoomcar.com/images/original/6f17ebdd21613e4fb147c47d136ed7b722d15152.png?1633930605"
+                                    alt="flag image">
+                                <span id="country-code">+91</span>   
+                            </div>
+                            <span id="down-arrow">&blacktriangledown;</span>
+                        </div>
+                        <input id="enter-number" type="number"  placeholder="Mobile Number" maxlength="10">
+                    </div>
+                </div>
+                
+                <div class="continue-btn" onclick="signin()" ><div id="continue-btn-id">CONTINUE</div></div>
+            </div>
+            <div class="register_popUp">
+                <img id="image1" src="cross2.png" alt="image">
+                <p id="text2">New here? Welcome!</p>
+                <p id="text3"></p>
+                <div class="register" onclick="signup()"><p id="register">Register</p></div>
+            </div>
+            <div class="main-register-popUp">
+                <img id="image1" onclick="cross()"  src="cross2.png" alt="image">
+                <p id="text4">Please Fill Some Details </p>
+                <p id="text5">One last step to create a new account </p>
+                <input type="number" placeholder="Enter Mobile" id="registr-mobile">
+                <input type="email" placeholder="Enter Email" id="register-email">
+                <input type="text" placeholder="Full name" id="name">
+                <input type="password" placeholder="Password" id="register-password">
+                <input type="submit" id="submit-btn" onclick="main_signup()">
+            </div>
+            <div class="successfully-login-popUp">
+                <img id="image1" onclick="cross()"  src="cross2.png" alt="image">
+                <p id="text6">Congratulation!</p>
+                <p id="text7"> You Are Successfully Login</p>
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="signin_signup.js"></script>
+</body>
+
+</html>

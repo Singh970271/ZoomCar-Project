@@ -1,0 +1,345 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#main-container{
+    width: 420px;
+    margin: auto;
+}
+input{
+    outline: none;
+    border: none;
+}
+#image{
+    width: 420px;
+    height: 315px;
+}
+#text{
+    text-align: start;
+    box-sizing: inherit;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #1f1f1f;
+    margin-top: 30px;
+}
+.country-selector{
+    width: 70px;
+    height: 30px;
+    display: flex;
+}
+#down-arrow{
+    float: right;
+    line-height: 30px;
+    color: green;
+    font-size: 30px;
+}
+#mobile-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: #666;
+    border-left: 1px solid #e0e0e0;
+    padding-left: 8px;
+}
+#mobile-option{
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+    gap: 10px;
+    cursor:text;
+}
+.country-flag{
+    display: flex;
+}
+#country-flag{
+    width: 25px;
+    height: 25px;
+    margin-top: 3px;
+}
+#country-code{
+    margin-top: 5px;
+}
+#email-option{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #10a310;
+}
+hr{
+    margin: 20px 0 20px 0;
+    width: 400px;
+    color: #666;
+}
+#title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #10a310;
+}
+.social-option{
+    display: flex;
+}
+.social-option img{
+    margin: -8px 1px 0 3px;
+}
+#country-selector1{
+    width: 160px;
+    display: flex;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 5px;
+}
+.input-container{
+    display: flex;
+    
+}
+.input-container input{
+    width: 600px;
+    height: 55px;
+    margin-left: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 15px;
+    color: black;
+    appearance: none;
+}
+.input-container input:hover{
+    border: 2px solid green;
+    height: 54px;
+}
+#enter-number{
+    font-size: 15px;
+    color: black;
+    padding-left: 20px;
+}
+#enter-number:hover{
+    font-size: 12px;
+    font-size: 15px;
+}
+#click{
+    display: none;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#country-flag2{
+    width: 34px;
+    height: 34px;
+}
+.popUp-container{
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.popUp-container p{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+#click:checked~.popUp-container{
+    opacity: 1;
+    visibility: visible;
+}
+.popUp-content{
+    margin-top: 30px;
+}
+.continue-btn{
+    border: 1px solid rgb(224,224,224);
+    width: 450px;
+    height: 50px;
+    background: rgb(224,224,224);
+    bottom: 20px;
+    box-shadow: 0 1px 3px 0 rgb(0, 0, .1);
+    margin: 350px 0 0 70px;
+}
+#continue-btn-id{
+    width: 100px;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #fff;
+    text-transform: uppercase;
+    pointer-events: none;
+    box-sizing: inherit;
+    margin: 18px 0 0 170px;
+}
+.continue-btn:hover{
+    background: green;
+    border:1px solid green;
+}
+.register_popUp{
+    border: 1px solid green;
+    border-radius: 10px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#left-arrow1{
+    size: 40px;
+    margin:10px 0px 0px 20px;
+}
+#text2{
+    color: green;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 30px 0px 0px 20px;
+}
+.register{
+    width: 350px;
+    height: 50px;
+    background: green;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0px 0px 25px;
+}
+.register p{
+    font-size: 22px;
+    padding-top:10px ;
+}
+#cross{
+    width: 350px;
+    height: 30px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+#image1{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 10px 20px 0px 0px;
+   cursor: pointer;
+}    
+#dis-register{
+    opacity: 1;
+    visibility: visible;
+}
+#text3{
+    font-size: 15px;
+    width: 280px;
+    color: rgb(116, 113, 113);
+    margin: 30px 0px 0px 50px;
+}
+.main-register-popUp{
+    width: 500px;
+    height: 600px;  
+    margin: auto;
+}
+#text4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px 0px 30px;
+}
+#text5{
+    font-weight: 300;
+    color: rgb(163, 156, 156);
+    margin: 10px 0px 0px 30px
+}
+#register-email{
+    width: 80%;
+    height: 40px;
+    margin: 20px 0px 0px 45px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+#name{
+    width: 80%;
+    height: 40px;
+    margin: 20px 0px 0px 45px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+#register-password{
+    width: 80%;
+    height: 40px;
+    margin: 20px 0px 0px 45px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.main-register-popUp{
+    border: 1px solid green;
+    border-radius: 10px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#registr-mobile{
+    width: 80%;
+    height: 40px;
+    margin: 20px 0px 0px 45px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+#dis-main-register{
+    opacity: 1;
+    visibility: visible;
+}
+#z-popUp{
+    visibility: hidden;
+    opacity: 0;
+}
+#submit-btn{
+    width: 200px;
+    height: 50px;
+    background: green;
+    color: white;
+    border-radius: 7px;
+    margin: 100px 0px 0px 150px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.successfully-login-popUp{
+    border: 1px solid green;
+    border-radius: 10px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#text6{
+    color: green;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 30px 0px 0px 80px;
+}
+#text7{
+    color: green;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 60px 0px 0px 100px;
+}
+#successfully_login{
+    opacity: 1;
+    visibility: visible;
+}
