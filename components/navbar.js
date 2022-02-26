@@ -12,7 +12,7 @@ function navbar(){
                 <ul>
                     <li>
                         <!-- Make a onclick function of become a host -->
-                        <a href="">Become a Host</a>
+                        <a href="./becomeHost.html">Become a Host</a>
                     </li>
                     <li>
                         <!-- Make a onclick function of zms -->
@@ -20,7 +20,7 @@ function navbar(){
                     </li>
                     <li>
                         <!-- Make a onclick function of login and signup -->
-                        <a href="">Login/Signup</a>
+                        <a href="./signin_signup.html">Login/Signup</a>
                     </li>
                 </ul>
             </nav>`
