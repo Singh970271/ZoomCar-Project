@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 var carsummary = JSON.parse(localStorage.getItem("carsummary"));
 
 console.log(carsummary)
@@ -44,10 +52,15 @@ function appendData(element){
    coupon.id="coupon";
    let coupon_input = document.createElement("input")
    let coupon_button = document.createElement("button")
+   
    coupon_button.addEventListener("click",()=>{
        if(coupon_input.value=="Zoomcar30"){
            price_div.innerText= "";
-        price_div.innerText= "Total Fare:-"+(element.price-(element.price/100)*30);
+           let pricez=(element.price-(element.price/100)*30);
+        price_div.innerText= "Total Fare:-"+pricez;
+        console.log(pricez);
+        localStorage.setItem("price",pricez);
+        
        }
        
    })
@@ -57,12 +70,19 @@ function appendData(element){
    
 
    let price_value = document.createElement("p");
-   price_value.innerText="Total Fare:-"+element.price;
+   let price=element.price;
+   localStorage.setItem("price",price);
+   price_value.innerText="Total Fare:-"+price;
    price_value.style.fontWeight="bold"
+   console.log(price);
 
    let checkout= document.createElement("div")
    checkout_button= document.createElement("button")
    checkout_button.innerHTML="Checkout"
+   checkout_button.setAttribute("id","checkout_button");
+   checkout_button.addEventListener("click",()=>{
+     window.location.href="paymentPage.html"
+   })
    checkout.append(checkout_button)
 
      cartitle.append(p)

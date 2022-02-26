@@ -175,7 +175,7 @@
         .field-wrap>a{
             display: block;
         }
-        .field-address{
+        #field-address{
             font-size: 16px;
             margin: 0 8px;
             display: flex;
@@ -245,8 +245,8 @@
                             </div>
                             <div class="box-border">
                                 <div class="field-wrap">
-                                    <a href="">
-                                        <div class="field-address">
+                                    <a >
+                                        <div id="field-address">
                                             <div class="green-icon"></div>
                                             <div class="placeholder">Pick Up City, Airport, Adress or Hotel</div>
                                         </div>
@@ -395,6 +395,11 @@ import {navbar,sidebarf,citybarf} from "./components/navbar.js"
     // function displaycity(){
     //     document.querySelector("#city-lightbox").style.display="flex";
     // }
+
+    document.getElementById("field-address").addEventListener("click",displaybook);
+    function displaybook(){
+        window.location.href="book.html";
+    }
 
      
     
