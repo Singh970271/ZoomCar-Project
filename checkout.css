@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(245,245,245);
+}
+
+        
+#container{
+    border: 1px solid black;
+    width: 30%;
+    height: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    row-gap: 0px;  
+}
+#first{
+   
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    height: 100px;
+    justify-content: space-around;
+    border: 1px solid red;
+    margin-bottom: 0px;
+}
+#first img{
+    width: 100%;
+}
+#time{
+    margin-top: 0px;
+    border: 1px  solid red;
+    height: 100px;
+}
+#green{
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    
+}
+#red{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+}
+#start{
+    display: grid;
+      grid-template-columns: 30px 150px;
+      align-items: baseline;
+    
+}
+#end{
+    display: grid;
+    grid-template-columns: 30px 150px;
+    align-items: baseline;
+}
+#price_div{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    gap: 30px;
+    align-items: baseline;
+}
+#coupon{
+    display: flex;
+    height: 33px;
+    
+    
+}

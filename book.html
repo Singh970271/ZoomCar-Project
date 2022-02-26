@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link rel="stylesheet" href="./styles/book.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div id="container">
+       
+
+        <div class="sidebar">
+            <div>
+                <p style="margin-bottom: 0px;">Free kms</p>
+                <div class="freekms">
+                    <button>60</button>
+                    <button>90</button>
+                </div>
+            </div>
+            <div>
+                <p style="margin-bottom: 0px;">Fuel Cost</p>
+                <div class="fuelcost">
+                    <button>Fuel Not Included</button>
+    
+                </div>
+            </div>
+            <div>
+                <p style="margin-bottom: 0px;">Seats</p>
+                <div class="seats">
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                </div>
+    
+    
+            </div>
+            <div>
+                <p style="margin-bottom: 0px;">Car Types</p>
+                <div class="seats">
+                    <button>SUV</button>
+                    <button>Sedan</button>
+                    <button>Hatchback</button>
+                </div>
+    
+            </div>
+            <div>
+    
+                <p style="margin-bottom: 0px;">Transmission</p>
+                <div class="freekms">
+                    <button>Manual</button>
+                    <button>Automatic</button>
+                </div>
+            </div>
+            <div>
+    
+                <p style="margin-bottom: 0px;">Delivery Type</p>
+                <div class="freekms">
+                    <button>Home Delivery</button>
+                    <button>Airport</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="right">
+            <div id="form">
+                <input type="text" id="place" placeholder="Enter Pickup address">
+                <div id="date-time">
+                    <div>
+                        START DATE/TIME
+                        <input type="datetime-local" id="start" oninput="update()"></div>
+                    <div id="arrow">
+                    <!-- <i class="material-icons" id="arrow">arrow_right_alt</i> -->
+                    <img src="https://www.zoomcar.com/img/icons/icons-arrow-right-small.png" alt="">
+                    </div>
+                    <div>
+                        END DATE/TIME
+                        <input type="datetime-local" id="end" oninput="update()">
+                    </div>
+                </div>
+            </div>
+            <div id="home">
+                <div id="home-img">
+                    <img src="https://img1.zoomcar.com/images/original/976c02875a91f8e252ab53c09f8f30b22ae0e905.png?1595735439" alt="">
+                </div>
+                <div><div>Get Home Delivery starting at just ₹ 49</div>
+                <div>Don't want to go for pick-up? Select Home Delivery on the next step</div>
+            </div>
+
+            </div>
+            <div id="cars"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="book.js"></script>

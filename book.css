@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(245,245,245);
+}
+
+#container{
+    border: 1px solid white;
+    width: 93%;
+    margin: auto;
+    display: flex;
+    gap: 1%;
+}
+/* #left{
+    width: 25%;
+    height: 600px;
+    border: 1px solid red;
+   display: grid;
+} */
+#right{
+    width: 74%;
+    border: 1px solid white;   
+}
+#form{
+    border: 1px solid white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#place{
+    width: 99%;
+    height: 40px;
+    margin-bottom: 4px;
+    border: none;
+    border: 1px solid green;
+    border-radius: 2px;
+    
+    
+}
+#date-time{
+   display: flex;
+   width: 99%;
+   display: flex;
+   border: 1px solid green;
+   padding: 2px;
+}
+#date-time input{
+    width: 450px;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    
+    
+}
+
+#arrow{
+margin-top: 9px;
+width: 60px;
+
+
+}
+#home{
+    width: 100%;
+    border: 1px solid white;
+    height: 100px;
+    display: flex;
+    background-color: white;
+    margin-top: 30px;
+    
+    align-items: center;
+}
+#home-img{
+    height: 40px;
+    width: 40px;
+    /* border: purple 1px solid; */
+    margin-left: 20px;
+}
+#home-img img{
+    width: 100%;
+    height: 100%;
+}
+#cars{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+   
+}
+#car_box{
+    
+display: flex;
+background-color: white;
+height: 140px;
+margin-top: 10px;
+
+}
+#left_div{
+    width: 20%;
+}
+#left_div img{
+    width: 100%;
+    height: 100%;
+}
+#middle_div{
+   width: 60%;
+}
+#right_div{
+    width: 20%;
+}
+#right_div button:hover{
+    background-color: rgb(16,163,16);
+    
+}
+#right_div button{
+    
+    width: 80px;
+    height: 30px;
+    background-color: white;
+     border: rgb(16,163,16) 1px solid;
+     
+    
+}
+#pickup_div{
+    background-color: rgb(219, 218, 218);
+}
+
+.sidebar p{
+    font-weight: bold;
+    
+}
+.sidebar{
+    width: 350px;
+    height: 550px;
+    border: 1px solid #cecece;
+    background-color: white;
+
+}
+.sidebar> div{
+    width: 100%;
+    height: 90px;
+    border: 1px solid white;
+}
+.freekms{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #cecece;
+    padding: 5px;
+    
+    background-color: #cecece;
+    
+    width: 96%;
+}
+.freekms button{
+  width: 150px;
+  height: 30px;
+  border: none;
+}
+.freekms button:hover{
+    background-color: green;
+}
+.fuelcost button{
+    width: 70%;
+    height: 30px;
+    border: none;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.fuelcost{
+    border: 1px solid #cecece;
+    background-color: #cecece;
+    height: 40px;
+   
+    width: 99%;
+}
+.fuelcost button:hover{
+    background-color: green;
+}
+.seats button{
+    width: 30%;
+    height: 35px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-width: 1px;
+    margin-top: 4px;
+    border-color: #cecece;
+
+}
+.seats button:hover{
+    background-color: green;
+}
+.seats{
+    text-align: center;
+    border: 1px solid #cecece;
+    height: 45px;
+    background-color: #cecece;
+    
+}
