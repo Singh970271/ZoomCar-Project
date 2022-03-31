@@ -1,4 +1,4 @@
-function signup(e){
+function signup(){
     console.log("welcom To Sign Up")
    var z= document.querySelector(".popUp-container");
    z.style.display="none"
@@ -13,7 +13,8 @@ function signin(e){
     var mobile=document.getElementById('enter-number').value;
     var user=localStorage.getItem('username1');
     var data=JSON.parse(user);
-    if(mobile!==data.mobile){
+    // mobile!==data.mobile
+    if(!data || mobile!==data.mobile ){
         var p=document.getElementById('text3');
         p.innerHTML='The mobile number +91'+mobile+' has not been registered with us. Lets create a new account.'
         var x=document.querySelector(".register_popUp");
@@ -37,7 +38,7 @@ function cross(){
 
 
 function main_signup(e){
-    event.preventDefault();
+    e.preventDefault();
     var mobile=document.getElementById('registr-mobile').value;
     var email=document.getElementById('register-email').value;
     var username=document.getElementById('name').value;
@@ -62,7 +63,7 @@ function main_signup(e){
 
 //become host js
 function hostFunc(e){
-    event.preventDefault();
+    e.preventDefault();
     var mobile=document.getElementById('hostNumber').value;
     var email=document.getElementById('hostEmail').value;
 
