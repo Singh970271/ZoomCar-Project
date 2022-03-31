@@ -1,0 +1,651 @@
+#main-container{
+    width: 100%;
+    height: 5500px;
+    border: 1px solid red;
+}
+
+#top-container{
+background-image: url(https://www.zoomcar.com/assets/component-images/ZMS-Hero-Banner.584135fee08ac6c84fee329d5fb915f4.jpg);
+ height: 98vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-size: cover;
+background-position: 50% 75%;
+
+}
+#service-header{
+    /* background-color: #0f0f0f;
+    position: fixed; */
+    display: flex;
+justify-content: space-around;
+padding: 10px 0;
+position: sticky;
+position: -webkit-sticky;
+top: -1;
+z-index: 10;
+width: 100%;
+
+}
+#imge{
+align-self: center;
+height: 24px;
+}
+.button{
+ padding: 10px 17px 10px 18px;
+border-radius: 4px;
+border: 1px solid #e0e0e0;
+background-color: #fff;
+font-size: 14px;
+font-weight: 400;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.43;
+/* letter-spacing: .24px; */
+text-align: center;
+color: #1f1f1f;
+outline: none;
+cursor: pointer;
+}
+.data{
+width: 500px;
+margin: auto;
+
+height: 300px;
+} 
+.heading{
+font-size: 36px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.33;
+letter-spacing: normal;
+text-align: center;
+color: #fff;
+}
+.para{
+font-size: 16px;  
+font-weight: 400;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.5;
+letter-spacing: .24px;
+text-align: center;
+color: #fff;
+padding-top: 16px;
+}
+/* .bttn{
+height: 120px;
+justify-content: center;
+margin: auto;
+border: 1px solid red;
+width: 10%;
+} */
+.btn{
+padding: 12px 33.7px 12px 34px;
+border: none;
+border-radius: 4px;
+background-color: #10a310;
+font-size: 14px;
+font-weight: 500;
+text-align: center;
+color: #fff;
+min-width: 220px;
+outline: none;
+cursor: pointer;
+margin-top: 48px;
+margin-left: 124px;
+}
+.bottom-green{
+height: 16px;
+background-color: #10a310;
+}
+#product{
+height: 98vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-size: cover;
+background-position: 50% 75%;
+
+padding-bottom: 8%;
+}
+#product-offering{
+font-size: 35px;
+font-weight: 650;
+font-stretch: normal;
+text-align: center;
+color: #1f1f1f;
+padding-top: 5%;
+
+}
+#cnt{
+border: 1px solid  #e0e0e0;
+margin: auto;
+height: 1200px;
+width: 80%;
+margin-top: 10px;
+
+/* padding: 72px 32px 32px;
+border-radius: 8px; */
+  background-color: #f5f5f5;  
+/* width: 80%;
+max-width: 940px; */
+ align-self: center; 
+
+} 
+#tab-cont{
+display: flex;
+justify-content: space-between; 
+align-self: center;
+padding: 4px;
+border-radius: 8px;
+box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 14%);
+background-color: #fff;
+width: 55%;
+/* max-width: 900px; */
+position: relative;
+bottom: -32px;
+margin: auto;
+}
+#class-tab{
+
+font-size: 19px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: .24px;
+color: #1f1f1f;
+padding: 16px;
+width: 100%;
+border-radius: 8px;
+background-color: #10a310;  
+/* text-align: center; */
+ cursor: pointer; 
+} 
+#class-tabbs{ 
+   margin-top: 10px;
+    width: 100%;
+    cursor: pointer; 
+   font-size: 19px;
+ font-weight: 600;
+ line-height: 24px;
+letter-spacing: .20px;
+ color: #fff; 
+ border-radius: 8px;
+  
+color: #1f1f1f;
+padding: 16px; 
+
+}  
+#tab{
+
+
+
+margin: auto;
+height: 850px;
+width: 70%;
+margin-top: 40px;
+
+
+}
+.main{
+font-size: 19px;
+font-weight: 400;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.5;
+letter-spacing: .24px;
+text-align: center;
+color: #666;
+max-width: 620px;
+margin: 0 auto;
+} 
+#slider{
+
+width: 99%;
+height: 300px;
+margin: auto;
+margin-top: 20px;
+/* position: relative;
+overflow: hidden; */
+}
+img{
+height: 350px;
+
+}
+#features{
+margin-top: 30px;
+font-size: 20px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.4;
+letter-spacing: 1.68px;
+color: #666;
+padding-bottom: 24px;
+}
+#features-container{
+display: flex;
+width: 99%;
+height: 250px;
+
+}
+#features-descrp{
+
+width: 35%;
+height: 249px;
+} 
+#features-inbox{
+padding-right: 20px;
+padding-bottom: 40px;
+
+height: 123px;
+width: 100%;
+}
+
+#safety{
+
+font-size: 16px;
+line-height: 24px;
+letter-spacing: .24px;
+font-weight: 600;
+color: #1f1f1f;
+padding-bottom: 8px;
+}
+#geo-fencing{
+
+font-size: 16px;
+line-height: 24px;
+font-weight: 300;
+letter-spacing: .24px;
+color: #666;
+}
+#btt{
+  
+  width: 99%;
+  height: 35px;
+  margin-top: 5px;
+}
+#buttons{
+padding: 12px 33.7px 12px 34px;
+border: none;
+border-radius: 4px;
+background-color: #10a310;
+font-size: 14px;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.14;
+text-align: center;
+color: #fff;
+min-width: 220px;
+outline: none;
+cursor: pointer;
+
+}
+#partners{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 500px;
+  margin-top: 90px;
+  background-color: #10a310;
+}
+#partners-cont{
+  height: 700px;
+
+position: relative;
+top: -48vh;
+padding: 48px 72px;
+border-radius: 8px;
+background-color: #f5f5f5;
+margin: 0 auto;
+max-width: 940px;
+    display: flex; 
+   flex-wrap: wrap;
+   gap: 10px;
+ /* flex-direction: column; */
+ /* justify-content: space-between;   */
+}
+#why{
+font-size: 32px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.31;
+letter-spacing: normal;
+text-align: center;
+color: #fff;
+padding-bottom: 8px;
+}
+#inner-partners{
+display: flex;
+
+width: 99%;
+height: 220px;
+/* justify-content: space-between; */
+ 
+}
+#point{
+width: 35%;
+height: 200px;
+}
+.icon{
+padding-bottom: 10px;
+width: 32px;
+height: 35px;
+}
+#go-to{
+font-family: IBM Plex Sans;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: .24px;
+font-weight: 600;
+color: #1f1f1f;
+padding-bottom: 8px;
+}
+#quick{
+font-weight: 400;
+color: #666;
+font-size: 15px;
+line-height: 24px;
+letter-spacing: .24px;
+}
+#images{
+margin-top: 30px;
+
+width: 100%;
+height: 600px;
+}
+.map{
+width: 99%;
+height: 600px;
+}
+#proven{
+background-image: url(https://www.zoomcar.com/assets/component-images/rectangle.e2190cd211f285fb86e5c7809c0f7b42.jpg);
+border: 1px ;
+width: 100%;
+height: 700px;
+margin: 130px;
+margin-left: 20px;
+
+/* margin: auto; */
+}
+#track{
+  display: flex;  
+width: 90%;
+height: 150px;
+text-align: center; 
+ align-items: center;   
+ text-align: center; 
+ margin: auto; 
+margin-top: 205px;
+ /* flex-direction: column;
+padding-top: 8%;
+padding-bottom: 5%;
+position: relative;
+top: -60vh;  */
+
+
+}
+#records{
+
+font-size: 32px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.31;
+letter-spacing: normal;
+text-align: center; 
+color: #1f1f1f;
+max-width: 420px;
+margin-left: 30px;
+}
+#backed-by{
+margin-left: 30px;
+font-size: 16px;
+font-weight: 400;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.5;
+letter-spacing: .24px;
+ text-align: center; 
+color: #666;
+max-width: 460px;
+padding-top: 16px;
+}
+#boxes{
+height: 550px;
+border: 1px ;
+ display: flex;  
+gap: 55px; 
+ /* align-items: center;  */
+position: relative;
+ top: -65vh; 
+width: 60%;
+ flex-wrap: wrap;   
+ margin:  auto; 
+ /* justify-content: space-between;     */
+/* max-width: 960px; */
+margin-top: -55px;
+
+}
+#square{
+border: 1px solid ;
+ padding: 24px; 
+border-radius: 4px;
+background-image: linear-gradient(318deg,#0b0b0b,#1b1b1b 3%); 
+width: 200px;
+height: 220px;
+margin-top: -10px;
+
+
+/* display: flex;
+
+flex-direction: column; 
+ */
+} 
+.icon-fuel{
+width: 48px;
+height: 48px;
+
+}
+.fuel-cost{
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+color: #fff;
+margin-top: 30px; 
+}
+#form{
+border: 1px ;
+width: 65%;
+height: 650px;
+margin: auto; 
+margin-top: 50px;
+align-items: center;
+
+
+}
+#connect{
+font-size: 32px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.31;
+letter-spacing: normal;
+text-align: center;
+color: #1f1f1f;
+max-width: 420px;  
+} 
+#leave-details{
+font-size: 16px;
+font-weight: 400;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.5;
+letter-spacing: .24px;
+text-align: center;
+color: #666;
+max-width: 460px;
+padding-top: 16px;
+
+} 
+/* #form-list{
+border: 1px solid red;
+width: 80%;
+height: 500px;
+margin: auto;
+margin-top: 30px;
+display: flex;
+margin: auto;
+
+} */
+#name{
+border: 1px ;
+width: 99%;
+height: 75px;
+display: flex;
+gap: 15px; 
+margin-top: 30px;
+
+}   
+/* #fil{
+border:1px solid red ;
+height: 60px;
+width: 60%; 
+
+
+} */
+/* #eml{
+
+
+
+} */
+
+.comp{
+border: 1px  ;
+height: 55px;
+width: 40%;
+/* margin: auto; */
+text-align: center; 
+}
+#NAme{
+border: 1px solid #e0e0e0 ;
+height: 54px;
+width: 100%;
+font-size: 16px;
+font-weight: 400;
+border-radius: 4px;
+}
+#Email{
+border: 1px  ;
+height: 60px;
+width: 80%;
+border-radius: 4px;
+}
+#text{
+width: 99%;
+height:155px;
+border: 1px ;
+margin-top: 30px;
+border-radius: 4px;
+}
+#btn{
+border: 1px ;
+height: 45px;
+width: 100%;
+margin-top: 30px; 
+justify-content: center; 
+display: flex;
+
+
+
+}
+#btton{
+/* padding: 10px 25.7px 10px 24px;  */
+border: none;
+border-radius: 4px;
+background-color: #10a310;
+font-size: 14px;
+font-weight: 500;
+
+/* text-align: center; */
+color: #fff;
+min-width: 220px;
+outline: none;
+}
+
+#bottom-green{
+height: 16px;
+background-color: #10a310;
+margin-top: -350px;
+
+}
+#footer{
+width: 100%;
+height: 350px;
+border: 1px  ;  
+/* display: flex; */
+flex-direction: column;
+padding-top: 84px;
+padding-bottom: 64px; 
+ background-image: linear-gradient(270deg,#000,#1f1f1f); 
+ 
+
+
+}
+#info{
+height: 20px;
+width: 100%;
+border: 1px ;
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+color: #fff;
+  margin-top: 10px;  
+ 
+}
+
+#contact{
+height: 20px;
+width: 100%;
+border: 1px ;
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+color: #fff;
+ margin-top: 20px; 
+
+
+}
+#zoom-logo{
+border: 1px ;
+height: 30px; 
+width: 15%;
+margin: auto;
+margin-top: 50px;
+/* margin-left: 5px; */
+
+/* height: 24px;
+margin: auto; */
+}
+#car-logo{
+height: 24px;
+
+
+}
+#Reserved{
+
+height: 20px;
+width: 100%;
+border: 1px ;
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+color: #fff;
+ margin-top: 60px; 
+
+}
+#NAme,#area:focus{
+outline-color: #10a310;
+}
