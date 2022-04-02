@@ -113,10 +113,10 @@ function citybarf(){
                 <div class="inputbox">
                     <select name="" id="city">
                         <option value="">Select a City</option>
-                        <option value="delhi">Delhi</option>
-                        <option value="mumbai">Mumbai</option>
-                        <option value="bangalore">Bangalore</option>
-                        <option value="hyderabad">Hyderabad</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
                         <option value="Pune">Pune</option>
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Kolkata">Kolkata</option>
