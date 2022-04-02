@@ -93,10 +93,11 @@
 // console.log(start,end);
 // localStorage.setItem("start",JSON.stringify(start))
 // localStorage.setItem("end",JSON.stringify(end))
+getdata();
 async function getdata(){
  try{
   let city=JSON.parse(localStorage.getItem("city"));
-  let res=await fetch(`https://localhost:5000/${city}`);
+  let res=await fetch(`http://localhost:5000/${city}`);
   let data=await res.json();
   displayData(data);
  }catch(err){
@@ -106,13 +107,13 @@ async function getdata(){
 }
 
 
-displayData(carDataArray);
-function displayData(carDataArray){
+// displayData(carDataArray);
+async function displayData(carDataArray){
   document.getElementById("cars").innerText = null;
 
   
 
-  carDataArray.map(function(elem){
+  carDataArray.map(async function(elem){
 
     let car_box = document.createElement("div");
     car_box.id="car_box"
@@ -145,7 +146,7 @@ function displayData(carDataArray){
     price.innerText = "₹ "+elem.price;
     let button = document.createElement("button")
     button.innerHTML= "Book now"
-    button.addEventListener("click",()=>{
+    button.addEventListener("click",async()=>{
       let start = document.getElementById("start").value;
       let end = document.getElementById("end").value;
       let address=document.getElementById("place").value;
@@ -165,7 +166,7 @@ function displayData(carDataArray){
             carid:elem._id,
           }
           booking_json_data=JSON.stringify(bookingdata);
-          let res=await fetch("https://localhost:5000/bookings",{
+          let res=await fetch("http://localhost:5000/bookings",{
                     method:"POST",
 
              body:booking_json_data,
