@@ -16,7 +16,7 @@ function navbar(){
                     </li>
                     <li>
                         <!-- Make a onclick function of zms -->
-                        <a href="">ZMS</a>
+                        <a href="./zsm/zsm.html">ZMS</a>
                     </li>
                     <li>
                         <!-- Make a onclick function of login and signup -->
@@ -32,7 +32,7 @@ function sidebarf(){
                 
     <div class="blank"></div>
 <div class="menuelements">
-    <div class="profileclick">
+    <div class="profileclick" onclick='window.location.href="./profile.html"'>
         <div class="menudetails">
             <div id="sidelogo"><i class="fa-solid fa-credit-card"></i></div>
             <div id="sidedetails">Credits</div>
@@ -89,7 +89,9 @@ function sidebarf(){
         </div>
     </div>
 </div>
-</div>`
+</div>
+<div id="sidebarmore"></div>
+`
 }
 
 function citybarf(){
@@ -111,11 +113,11 @@ function citybarf(){
                 <div class="inputbox">
                     <select name="" id="city">
                         <option value="">Select a City</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="Mumbai">Mumbai</option>
-                        <option value="Bangalore">Bangalore</option>
-                        <option value="Hyderabad">Hyderabad</option>
-                        <option value="Bihar">Bihar</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="Pune">Pune</option>
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Kolkata">Kolkata</option>
                        

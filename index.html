@@ -220,16 +220,16 @@
             text-decoration: none;
             cursor: pointer;
         }
-        #city-lightbox{
-            display: flex;
-        }
+        /* #city-lightbox{
+            display: none;
+        } */
         
     </style>
 </head>
 <body>
     <div id="main-container">
         <div id="city-lightbox">
-            
+            <!-- city selection details -->
         </div>
         <header id="header">
             
@@ -356,14 +356,18 @@
 
         </div>
         <div id="sidemenuouter" >
-            
+            <!-- Side bar for home page -->
         </div>
     </div>
 </body>
+
 </html>
 
 
 <script type="module">
+       localStorage.setItem("token",1234);
+   
+    let token=JSON.parse(localStorage.getItem("token"));
 import {navbar,sidebarf,citybarf} from "./components/navbar.js"
     let header=document.getElementById("header");
     header.innerHTML=navbar();
@@ -371,19 +375,35 @@ import {navbar,sidebarf,citybarf} from "./components/navbar.js"
     sidebar.innerHTML=sidebarf();
     let citybar=document.getElementById("city-lightbox");
     citybar.innerHTML=citybarf();
+    if(token){
+        
+        citybar.style.display="none";
+    }
+    else{
+        
+        citybar.style.display="flex";
+       
+    }
+    
 
 
 
      document.querySelector("#confirm").addEventListener("click",confirm);
     function confirm(){
         let city=document.getElementById("city").value;
-        // console.log(city);
+        let state=document.getElementById("country").value;
+       if(city!="" &&  state!=""){
         localStorage.setItem("city",JSON.stringify(city));
         document.querySelector("#city-lightbox").style.display="none";
+       }
+       else{
+           alert("Please Select City and Country");
+       }
     }
     // let city=document.getElementById("city").value;
     document.querySelector("#pointer").addEventListener("click",opensideber);
-    sidebar.addEventListener("click",closeside);
+    let closesidebar=document.getElementById("sidebarmore");
+    closesidebar.addEventListener("click",closeside);
     function closeside(){
         sidebar.style.display="none";
     }
@@ -398,7 +418,13 @@ import {navbar,sidebarf,citybarf} from "./components/navbar.js"
 
     document.getElementById("field-address").addEventListener("click",displaybook);
     function displaybook(){
-        window.location.href="book.html";
+        if(token){
+            window.location.href="book.html";
+        }
+        else{
+            alert("Please login to this website first");
+        }
+        // window.location.href="book.html";
     }
 
      

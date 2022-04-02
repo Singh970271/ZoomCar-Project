@@ -93,7 +93,7 @@
   display: none;
   left: 0;
   background-color: rgba(0, 0, 0, 0.87);
-  z-index: 999;
+  /* z-index: 999; */
 }
 .sidemenu {
   height: 100%;
@@ -179,4 +179,16 @@ nav ul li {
 }
 li > a {
   color: white;
+}
+
+#sidebarmore{
+  height: 100%;
+  width: 62%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: auto;
+  /* border: 1px solid red; */
+  margin-left:20px;
+  left:450px;
+  transition: all 0.2s;
 }
