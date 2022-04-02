@@ -25,7 +25,7 @@ async function signin(e){
 //         "password": "secret",
 //   "username": "masai-school"
        signin_json_data=JSON.stringify(signin_data);
-        let res=await fetch("https://localhost:5000/login",{
+        let res=await fetch("http://localhost:5000/login",{
             method:"POST",
 
             body:signin_json_data,
@@ -122,7 +122,7 @@ async function main_signup(e){
         //         "password": "secret",
         //   "username": "masai-school"
                login_json_data=JSON.stringify(login_data);
-                let res=await fetch("https://localhost:5000/register",{
+                let res=await fetch("http://localhost:5000/register",{
                     method:"POST",
         
                     body:login_json_data,
