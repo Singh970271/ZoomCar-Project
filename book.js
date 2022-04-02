@@ -97,16 +97,25 @@ getdata();
 async function getdata(){
  try{
   let city=JSON.parse(localStorage.getItem("city"));
+<<<<<<< HEAD
   let res=await fetch(`http://localhost:5000/${city}`);
+=======
+  let res=await fetch(`http://localhost:5000/cars/${city}`);
+>>>>>>> f28cb4ff8c92ca9e03eeac609898be88d58268f5
   let data=await res.json();
+  console.log(data)
   displayData(data);
  }catch(err){
    console.log("err:",err);
  }
 
 }
+getdata()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f28cb4ff8c92ca9e03eeac609898be88d58268f5
 // displayData(carDataArray);
 async function displayData(carDataArray){
   document.getElementById("cars").innerText = null;
@@ -146,7 +155,11 @@ async function displayData(carDataArray){
     price.innerText = "₹ "+elem.price;
     let button = document.createElement("button")
     button.innerHTML= "Book now"
+<<<<<<< HEAD
     button.addEventListener("click",async()=>{
+=======
+    button.addEventListener("click",async ()=>{
+>>>>>>> f28cb4ff8c92ca9e03eeac609898be88d58268f5
       let start = document.getElementById("start").value;
       let end = document.getElementById("end").value;
       let address=document.getElementById("place").value;
