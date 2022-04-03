@@ -18,6 +18,185 @@ async function getdata(){
 }
 getdata()
 
+
+async function getsuvdata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   console.log(city)
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.types == "suv" || elem.types=="SUV")
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+ async function getsedandata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   console.log(city)
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.types == "sedan" || elem.types=="Sedan")
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+
+ async function gethatchbackdata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   console.log(city)
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.types == "hatchback" || elem.types=="Hatchback")
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+ async function getmanualdata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.transmission == "manual" || elem.types=="Manual")
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+ async function getautodata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.transmission == "automatic" || elem.types=="Automatic")
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+ async function getfivedata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.seates == 5)
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+ async function getsevendata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.seates == 7)
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+
+ async function getpetroldata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.fuel == "petrol" || elem.fuel=="Petrol")
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+ 
+
+ async function getdieseldata(){
+  try{
+    let city=JSON.parse(localStorage.getItem("city"));
+   
+   
+   let res=await fetch(`http://localhost:5000/cars/${city}`);
+   let data=await res.json();
+   //displayData(data);
+   var newdata = data.filter(myfunction)
+   displayData(newdata);
+   function myfunction(elem){
+     return (elem.fuel == "diesel" || elem.fuel=="Diesel")
+   }
+   console.log(newdata)
+  }catch(err){
+    console.log("err:",err);
+  }
+ }
+
+
+
+
+
 // <<<<<<< HEAD
 
 // =======
