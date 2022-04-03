@@ -1,27 +1,41 @@
 
 
+getdata();
+
+async function getdata(){
+  try{
+    let id=JSON.parse(localStorage.getItem("bookingid"));
+  
+    // let res=await fetch(`http://localhost:5000/${city}`);
+  
+    let res=await fetch(`http://localhost:5000/bookings/${id}`);
+  // >>>>>>> f28cb4ff8c92ca9e03eeac609898be88d58268f5
+    let data=await res.json();
+    console.log(data)
+    appendData(carsummary)
+   }catch(err){
+     console.log("err:",err);
+   }
+}
 
 
 
+// var carsummary = JSON.parse(localStorage.getItem("carsummary"));
 
 
-
-var carsummary = JSON.parse(localStorage.getItem("carsummary"));
-
-console.log(carsummary)
 let container = document.getElementById("container")
-appendData(carsummary)
+
 function appendData(element){
   let first = document.createElement("div");
   first.id="first";
   let cartitle = document.createElement("div");
   let p = document.createElement("h3");
-  p.innerText= element.carname;
+  p.innerText= element.carid.carname;
 
 
   let carimage = document.createElement("div");
   let image = document.createElement("img");
-   image.src = element.image;
+   image.src = element.carid.carimage;
 
    let time = document.createElement("div");
    time.id= "time"
@@ -31,19 +45,19 @@ function appendData(element){
    circle.id = "green";
    
 
-   start_time.innerText= JSON.parse(localStorage.getItem("start"))
+   start_time.innerText= element.startdate;
 
 
    let end = document.createElement("div")
    let red = document.createElement("div")
    red.id="red"
    let end_time= document.createElement("p");
-   end_time.innerText= JSON.parse(localStorage.getItem("end"))
+   end_time.innerText= element.enddate;
 
    let rating = document.createElement("div");
 
    let rating_value = document.createElement("p");
-   rating_value.innerText= "Rating-"+"5(234)"+" "+element.kilometres+" Kms driven"
+   rating_value.innerText= "Rating-"+"5(234)"+" "+element.carid.driven+" Kms driven"
 
 
    let price_div = document.createElement("div");
@@ -53,15 +67,45 @@ function appendData(element){
    let coupon_input = document.createElement("input")
    let coupon_button = document.createElement("button")
    
-   coupon_button.addEventListener("click",()=>{
+   coupon_button.addEventListener("click",async()=>{
        if(coupon_input.value=="Zoomcar30"){
-           price_div.innerText= "";
-           let pricez=(element.price-(element.price/100)*30);
-        price_div.innerText= "Total Fare:-"+pricez;
-        console.log(pricez);
-        localStorage.setItem("price",pricez);
+        try{
+          price_div.innerText= "";
+           let price=(element.price-(element.price/100)*30);
+           price_div.innerText= "Total Fare:-"+price;
         
+           localStorage.setItem("price",price);
+          let bookingdata={
+            
+            price:price,
+            
+          }
+          booking_json_data=JSON.stringify(bookingdata);
+
+           let id=JSON.parse(localStorage.getItem("bookingid"));
+  
+   
+  
+    let res=await fetch(`http://localhost:5000/bookings/${id}`,{
+                    method:"PATCH",
+
+             body:booking_json_data,
+
+
+              headers:{
+                "Content-Type":'application/json',
+                
+              },
+  });
+  let data=await res.json();
+  console.log(data);
+          
+       
+        
+       }catch(err){
+         console.log("err:",err);
        }
+      }
        
    })
    coupon_button.innerHTML="Apply Coupon"
