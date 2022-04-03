@@ -6,13 +6,13 @@ async function getdata(){
   try{
     let id=JSON.parse(localStorage.getItem("bookingid"));
   
-    // let res=await fetch(`http://localhost:5000/${city}`);
+  
   
     let res=await fetch(`http://localhost:5000/bookings/${id}`);
-  // >>>>>>> f28cb4ff8c92ca9e03eeac609898be88d58268f5
+ 
     let data=await res.json();
     console.log(data)
-    appendData(carsummary)
+    appendData(data)
    }catch(err){
      console.log("err:",err);
    }

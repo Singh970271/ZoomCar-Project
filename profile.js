@@ -20,7 +20,10 @@ async function display_profile(){
 
             headers:{
               "Content-Type":'application/json',
+
               authorization:token,
+
+              
             },
             
         });
@@ -60,6 +63,8 @@ async function get_bookingdata(){
             headers:{
               "Content-Type":'application/json',
               authorization:token,
+
+              
             },
             
         });

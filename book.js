@@ -91,7 +91,8 @@ async function displayData(carDataArray){
 
               headers:{
                 "Content-Type":'application/json',
-                authorization:token
+
+                authorization:token,
               },
   });
   let data=await res.json();
