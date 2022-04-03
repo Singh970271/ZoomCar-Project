@@ -50,7 +50,7 @@ async function signin(e){
         var t=document.querySelector(".successfully-login-popUp");
         t.setAttribute('id','successfully_login')
         console.log(data);
-    localStorage.setItem("token",JSON.stringify(data.token));
+    localStorage.setItem("token",data.token);
     }
        
         // window.location.href="index.html"
@@ -65,20 +65,7 @@ async function signin(e){
 
 
 
-    // if(!data || mobile!==data.mobile ){
-    //     var p=document.getElementById('text3');
-    //     p.innerHTML='The mobile number +91'+mobile+' has not been registered with us. Lets create a new account.'
-    //     var x=document.querySelector(".register_popUp");
-    //     x.setAttribute('id','dis-register');
-    //     document.getElementById('image1').addEventListener('click',function(){
-    //         x.style.display="none"
-    //     })
-    // }
-    // else if(mobile==data.mobile){
-    //     var t=document.querySelector(".successfully-login-popUp");
-    //     t.setAttribute('id','successfully_login')
-    //     // console.log("You are Successfully Login")
-    // }
+   
 }
 
 
@@ -137,7 +124,7 @@ async function main_signup(e){
             alert(data.message);
         }
         else{
-            localStorage.setItem("token",JSON.stringify(data.token));
+            localStorage.setItem("token",data.token);
             console.log(data);
                 window.location.href="index.html";
         }

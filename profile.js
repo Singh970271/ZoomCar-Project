@@ -1,4 +1,4 @@
-let token=JSON.parse(localStorage.getItem("token"));
+let token=localStorage.getItem("token");
 
 if(token){
     display_profile();

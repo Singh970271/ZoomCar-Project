@@ -67,7 +67,7 @@ async function displayData(carDataArray){
       let start = document.getElementById("start").value;
       let end = document.getElementById("end").value;
       let address=document.getElementById("place").value;
-      let token=JSON.parse(localStorage.getItem("token"));
+      let token=(localStorage.getItem("token"));
       if(address=="" || start=="" || end==""){
        
         console.log(address,start,end);
