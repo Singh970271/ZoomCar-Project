@@ -91,13 +91,13 @@ async function displayData(carDataArray){
 
               headers:{
                 "Content-Type":'application/json',
-                Authorization: `${token}`
+                authorization:token
               },
   });
   let data=await res.json();
   console.log(data);
  localStorage.setItem("bookingid",JSON.stringify(data._id));
-        window.location.href = "checkout.html"
+        // window.location.href = "checkout.html"
 
         }catch(err){
           console.log("err:",err);
