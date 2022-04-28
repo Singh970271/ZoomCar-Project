@@ -16,9 +16,25 @@ Zoomcar, is an “Indian Self-drive” car Rental Company, headquartered in Bang
 <img src="https://camo.githubusercontent.com/8b655816e545717df226aafd335fa658149deb52064a3b91181b9f9f0e443322/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f36342f3030303030302f637373332e706e67"/>
 <img src="https://camo.githubusercontent.com/ecc13d5d24244308f601ac3d528a6cb20dc09c914a4b310472cf39adf3ebc8d3/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f36342f3030303030302f6a736f6e2e706e67"/>
 </div>
-
-
-
+<h1>Features:<h1/>
+  <ol>
+    <li>Homepage</li>
+    <li>Select city for trip Booking</li>
+    <li>Stock Display</li>
+     <li>Select Pick-up and drop-off Location</li>
+     <li>Car Showroom for Booking</li>
+     <li>Payment page</li>
+     <li>Mode of Payment</li>
+  </ol>
+  <h1>Snapshots of our project</h1>
+  <p>HomePage</p>
+   <img src="https://user-images.githubusercontent.com/93313435/165329415-4d391d76-9567-4114-b5bd-0979e08f16fa.png"/>
+  <p>Homepage where you can select the city</p>
+  <img src="https://user-images.githubusercontent.com/93313435/165329545-f364b501-e926-4bc3-80eb-d19ca88888c2.png"/>
+  <p>Login/Signup Page</p>
+  <img src="https://user-images.githubusercontent.com/93313435/165330085-252ce509-78d3-442d-9544-0ebe62062201.png"/>
+  <p>Booking the ride Page</p>
+  <img src="https://user-images.githubusercontent.com/93313435/165329982-7b1e09c6-92cf-447e-93b1-69244331a9a9.png"/>
 
 
 
