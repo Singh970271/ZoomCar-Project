@@ -16,7 +16,7 @@ Zoomcar, is an “Indian Self-drive” car Rental Company, headquartered in Bang
 <img src="https://camo.githubusercontent.com/8b655816e545717df226aafd335fa658149deb52064a3b91181b9f9f0e443322/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f36342f3030303030302f637373332e706e67"/>
 <img src="https://camo.githubusercontent.com/ecc13d5d24244308f601ac3d528a6cb20dc09c914a4b310472cf39adf3ebc8d3/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f36342f3030303030302f6a736f6e2e706e67"/>
 </div>
-<h1>Features:<h1/>
+<h3>Features:<h3/>
   <ol>
     <li>Homepage</li>
     <li>Select city for trip Booking</li>
@@ -27,12 +27,12 @@ Zoomcar, is an “Indian Self-drive” car Rental Company, headquartered in Bang
      <li>Mode of Payment</li>
     <li>Zsm Page</li>
   </ol>
-  <h2>Area of Responsibility</h2>
+  <h3>Area of Responsibility</h3>
   <ul>
     <li>Built ZSM Page and integrated it with the frontend</li>
      <li>Laid out the database schema and build the Server</li>
   </ul>
-  <h1>Snapshots of our project</h1>
+  <h3>Snapshots of our project</h3>
   <p>HomePage</p>
    <img src="https://user-images.githubusercontent.com/93313435/165329415-4d391d76-9567-4114-b5bd-0979e08f16fa.png"/>
   <p>Homepage where you can select the city</p>
