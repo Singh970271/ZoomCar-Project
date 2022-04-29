@@ -25,6 +25,7 @@ Zoomcar, is an “Indian Self-drive” car Rental Company, headquartered in Bang
      <li>Car Showroom for Booking</li>
      <li>Payment page</li>
      <li>Mode of Payment</li>
+    <li>Zsm Page</li>
   </ol>
   <h2>Area of Responsibility</h2>
   <ul>
